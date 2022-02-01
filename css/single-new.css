@@ -3,8 +3,8 @@
     [Table of contents]
 
     01. [Base (Global style for some elements)]
-    02. [Style Section Name]
-    03. [Style Section Name]
+    02. [navbar styles]
+    03. [container sstyle]
     04ز [Style Section Name]
     05. [Style Section Name]
     06. [Style Section Name]
@@ -15,29 +15,50 @@
 /* -----------------------------------------------------------------
     Global style for some elements
 --------------------------------------------------------------------*/
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Nunito Sans', sans-serif;
+body {
+  font-family: "Nunito Sans", sans-serif;
 }
 
-a{
-    color: #000;
-    text-decoration: none;
+a {
+  color: #000;
+  text-decoration: none;
 }
 
-button, button:focus,
-input, input:focus
-textarea, textarea:focus{
-    outline: none;
-    border: none;
+button,
+button:focus,
+input,
+input:focus textarea,
+textarea:focus {
+  outline: none;
+  border: none;
 }
-
 
 /* -----------------------------------------------------------------
     Style Navbar
 --------------------------------------------------------------------*/
+
+header {
+  background-color: #0e1e32;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  padding-bottom: 30px;
+}
+
+/* image container style */
+.header-image img {
+  width: 70%;
+  height: 50vh;
+  margin: auto 15%;
+  position: absolute;
+  top: 25vh;
+}

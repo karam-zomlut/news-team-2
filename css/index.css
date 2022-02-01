@@ -15,29 +15,178 @@
 /* -----------------------------------------------------------------
     Global style for some elements
 --------------------------------------------------------------------*/
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+a {
+  color: #000;
+  text-decoration: none;
 }
 
-body{
-    font-family: 'Nunito Sans', sans-serif;
+button,
+button:focus,
+input,
+input:focus textarea,
+textarea:focus {
+  outline: none;
+  border: none;
+}
+.container-box {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Extra small devices  */
+@media (max-width: 575.98px) {
+  .container-box {
+    width: 330px;
+  }
 }
 
-a{
-    color: #000;
-    text-decoration: none;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container-box {
+    width: 540px;
+  }
 }
 
-button, button:focus,
-input, input:focus
-textarea, textarea:focus{
-    outline: none;
-    border: none;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container-box {
+    width: 750px;
+  }
 }
-
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container-box {
+    width: 970px;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .container-box {
+    width: 1170px;
+  }
+}
 
 /* -----------------------------------------------------------------
     Style Navbar
 --------------------------------------------------------------------*/
+nav .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  height: 100px;
+  position: relative;
+}
+nav .nav .nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* @media (max-width: 991px) {
+  nav .nav .nav-links {
+    width: 400px;
+    flex-wrap: wrap;
+  }
+} */
+@media (max-width: 768px) {
+  nav .nav .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 10px #eee;
+  }
+  nav .nav .nav-links.show {
+    opacity: 0;
+  }
+}
+nav .nav .nav-links li {
+  padding: 0 16px;
+}
+@media (max-width: 991px) {
+  nav .nav .nav-links li {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+}
+@media (max-width: 768px) {
+  nav .nav .nav-links li {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    text-align: center;
+    padding: 13px;
+  }
+  nav .nav .nav-links li:hover {
+    background-color: #f1f1f1;
+  }
+}
+
+nav .nav .nav-links li:first-child,
+nav .nav .nav-links li:last-child {
+  position: relative;
+}
+nav .nav .nav-links li:first-child::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+}
+nav .nav .nav-links li:last-child::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f101";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+  color: #444;
+}
+@media (max-width: 768px) {
+  nav .nav .nav-links li:last-child::after {
+    display: none;
+  }
+}
+nav .nav .nav-links li a {
+  color: #444;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+nav .nav .nav-links li a:hover {
+  color: red;
+}
+nav .nav .nav-icons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav .nav-icons li {
+  padding-left: 15px;
+}
+nav .nav .nav-icons li a {
+  color: #444;
+  transition: all 0.5s ease-in-out;
+}
+nav .nav .nav-icons li a:hover {
+  color: #888;
+}

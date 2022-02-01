@@ -394,7 +394,7 @@ hr {
 .social img {
   width: 2rem;
 }
- /* responsive for the header section */
+/* responsive for the header section */
 /* first break point  */
 /* media query header*/
 
@@ -410,16 +410,16 @@ hr {
     height: 30vh;
     top: 40vh;
   }
-    .related-blog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 50px 0 0 0;
-}
-.box {
-  width: 300px;
-}
+  .related-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0 0 0;
+  }
+  .box {
+    width: 300px;
+  }
 }
 /* seconed break point  */
 @media (max-width: 375px) {
@@ -429,19 +429,19 @@ hr {
     font-size: 1.2rem;
   }
   .header-image img {
-      object-fit: cover;
+    object-fit: cover;
     margin: auto 0%;
     height: 25vh;
     top: 30vh;
   }
   .related-blog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 50px 0 0 0;
-}
-.box {
-  width: 250px;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0 0 0;
+  }
+  .box {
+    width: 250px;
+  }
 }

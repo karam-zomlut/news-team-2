@@ -412,26 +412,11 @@ hr {
         media Query 
     --------------------------------------------------------------------*/
 
-/* Extra Small devices (280 px and down)*/
-@media (max-width: 350px) {
-    bod {
-        max-width: 350px;
-    }
-}
+
 
 /* landscape Tablet devices (1200px and down)*/
 @media (max-width: 1200px) {
-    /* image container style */
-
-    .header-image img {
-        width: 85%;
-        margin: auto 7.5%;
-    }
-
-    .main-body-container {
-        width: 85%;
-    }
-
+ 
     .single-page-container {
         gap: 15px;
     }
@@ -554,5 +539,12 @@ hr {
 
     .comment-text {
         margin-top: 80px;
+    }
+}
+
+/* Extra Small devices (280 px and down)*/
+@media (max-width: 350px) {
+    bod {
+        max-width: 350px;
     }
 }

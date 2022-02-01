@@ -3,9 +3,9 @@
     [Table of contents]
 
     01. [Base (Global style for some elements)]
-    02. [Style Section Name]
-    03. [Style Section Name]
-    04ز [Style Section Name]
+    02. [Single Page Container]
+    03. [Side Bar Style]
+    04. [Style Section Name]
     05. [Style Section Name]
     06. [Style Section Name]
     07. [Style Section Name]
@@ -15,29 +15,136 @@
 /* -----------------------------------------------------------------
     Global style for some elements
 --------------------------------------------------------------------*/
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Nunito Sans', sans-serif;
+    background-color: #E5E5E5;
 }
 
-a{
+a {
     color: #000;
     text-decoration: none;
 }
 
 button, button:focus,
-input, input:focus
-textarea, textarea:focus{
+input, input:focus,
+textarea, textarea:focus {
     outline: none;
     border: none;
 }
 
+p, div, span {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 /* -----------------------------------------------------------------
-    Style Navbar
+    Single Page Container
 --------------------------------------------------------------------*/
+.main-body-container {
+    width: 70%;
+    margin: 40px auto;
+    position: relative;
+
+}
+
+.single-page-container {
+    display: flex;
+    gap: 30px;
+    /*padding: 0 20px;*/
+
+}
+
+.body-single-page-container {
+    flex: 75%;
+    /*remove it*/
+    /*background-color: #7744a1;*/
+}
+
+/* info new  */
+.body-single-page-container .info-news {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.body-single-page-container .info-news .time-posted {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: #2A2A2A;
+    margin-right: 30px;
+}
+
+.body-single-page-container .info-news .posted-by {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: #2A2A2A;
+    opacity: 0.7;
+}
+
+/* -----------------------------------------------------------------
+    Side Bar Style
+--------------------------------------------------------------------*/
+.sidebar-banner-page-container {
+    flex: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidebar-banner-page-container .banner-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-banner-page-container .banner-container:first-child {
+    margin: 0 auto 40px auto;
+}
+
+.sidebar-banner-page-container .banner-container .banner-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.sidebar-banner-page-container .banner-container .banner-body {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.sidebar-banner-page-container .banner-container .banner-body img {
+    border-radius: 5px 5px 0 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.sidebar-banner-page-container .banner-container .banner-body img:hover {
+    transform: rotate(10deg) scale(1.5);
+}
+
+
+.sidebar-banner-page-container .banner-container .banner-body .banner-body-paragraph {
+    padding: 10px 5px 40px 20px;
+    background-color: #ffffff;
+    position: relative;
+}

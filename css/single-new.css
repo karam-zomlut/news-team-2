@@ -3,18 +3,22 @@
     [Table of contents]
 
     01. [Base (Global style for some elements)]
-    02. [Single Page Container]
-    03. [Side Bar Style]
-    04. [Style Section Name]
+    02. [Style Navbar]
+    03. [Single Page Container]
+    04. [Side Bar Style]
     05. [Style Section Name]
     06. [Style Section Name]
     07. [Style Section Name]
+
+    
+
 
 -----------------------------------------------------------------------------------*/
 
 /* -----------------------------------------------------------------
     Global style for some elements
 --------------------------------------------------------------------*/
+
 * {
     padding: 0;
     margin: 0;
@@ -22,8 +26,8 @@
 }
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
-    background-color: #E5E5E5;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #e5e5e5;
 }
 
 a {
@@ -31,14 +35,19 @@ a {
     text-decoration: none;
 }
 
-button, button:focus,
-input, input:focus,
-textarea, textarea:focus {
+button,
+button:focus,
+input,
+input:focus,
+textarea,
+textarea:focus {
     outline: none;
     border: none;
 }
 
-p, div, span {
+p,
+div,
+span {
     margin: 0;
     padding: 0;
 }
@@ -50,20 +59,43 @@ img {
 }
 
 /* -----------------------------------------------------------------
-    Single Page Container
+    Style Navbar
 --------------------------------------------------------------------*/
+
+header {
+    background-color: #0e1e32;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    padding-bottom: 30px;
+}
+
+/* image container style */
+.header-image img {
+    width: 70%;
+    height: 50vh;
+    margin: auto 15%;
+    position: absolute;
+    top: 25vh;
+}
+
+/* -----------------------------------------------------------------
+        Single Page Container
+    --------------------------------------------------------------------*/
 .main-body-container {
     width: 70%;
     margin: 40px auto;
     position: relative;
-
+    top: 32vh;
 }
 
 .single-page-container {
     display: flex;
     gap: 30px;
     /*padding: 0 20px;*/
-
 }
 
 .body-single-page-container {
@@ -86,7 +118,7 @@ img {
     font-weight: normal;
     font-size: 13px;
     line-height: 21px;
-    color: #2A2A2A;
+    color: #2a2a2a;
     margin-right: 30px;
 }
 
@@ -95,13 +127,13 @@ img {
     font-weight: normal;
     font-size: 13px;
     line-height: 21px;
-    color: #2A2A2A;
+    color: #2a2a2a;
     opacity: 0.7;
 }
 
 /* -----------------------------------------------------------------
-    Side Bar Style
---------------------------------------------------------------------*/
+        Side Bar Style
+    --------------------------------------------------------------------*/
 .sidebar-banner-page-container {
     flex: 25%;
     display: flex;
@@ -142,8 +174,10 @@ img {
     transform: rotate(10deg) scale(1.5);
 }
 
-
-.sidebar-banner-page-container .banner-container .banner-body .banner-body-paragraph {
+.sidebar-banner-page-container
+    .banner-container
+    .banner-body
+    .banner-body-paragraph {
     padding: 10px 5px 40px 20px;
     background-color: #ffffff;
     position: relative;

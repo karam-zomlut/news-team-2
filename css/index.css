@@ -23,6 +23,7 @@
 
 body{
     font-family: 'Nunito Sans', sans-serif;
+    background-color: #E5E5E5;
 }
 
 a{
@@ -37,7 +38,156 @@ textarea, textarea:focus{
     border: none;
 }
 
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 /* -----------------------------------------------------------------
-    Style Navbar
+    Style Latset Section
 --------------------------------------------------------------------*/
+.new-sec{
+    padding: 20px 0;
+}
+
+.latest-sec{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.latest-sec .latest-new{
+    padding: 20px;
+    position: relative;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7)40%, rgba(0, 0, 0, 0));
+    overflow: hidden;
+}
+
+.latest-sec .latest-new .new-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    transition: all .5s;
+}
+
+/* Hover on Latest New */
+.latest-sec .latest-new:hover .new-image{
+    transform: scale(1.08);
+}
+
+.latest-sec .latest-new .new-info{
+    position: absolute;
+    bottom: 20px;
+    color: #FFF;
+    padding-right: 20px;
+}
+
+.latest-sec .latest-new .new-info .new-title{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.latest-sec .latest-new .new-info .new-link{
+    color: #FFF;
+    font-weight: 600;
+    transition: all .5s;
+}
+
+.latest-sec .latest-new .new-info .new-link:hover{
+    color: rgb(201, 201, 201);
+}
+
+.latest-sec .latest-new .new-info .new-category{
+    padding: 0 15px;
+    border-left: 2px solid red;
+    font-weight: 600;
+    color: #d3d3d3;
+    transition: all .5s;
+}
+
+.latest-sec .latest-new .new-info .new-category:hover{
+    padding-left: 25px;
+    color: #FFF;
+}
+
+.latest-sec .big-latest{
+    flex-basis: 50%;
+    padding: 0 10px;
+}
+
+.latest-sec .big-latest .latest-new{
+    height: 400px;
+}
+
+.latest-sec .big-latest .new-info .new-title{
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.latest-sec .big-latest .new-info .new-category{
+    font-size: 1rem;
+}
+
+.latest-sec .more-latest{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.latest-sec .more-latest .latest-new{
+    flex-basis: 46%;
+    margin: 0 2%;
+    height: 190px;
+}
+
+.latest-sec .more-latest .latest-new:first-child,
+.latest-sec .more-latest .latest-new:nth-child(2){
+    margin-bottom: 10px;
+}
+
+.latest-sec .more-latest .latest-new:nth-child(3),
+.latest-sec .more-latest .latest-new:nth-child(4){
+    margin-top: 10px;
+}
+
+.latest-sec .more-latest .new-info .new-category{
+    font-size: .9rem;
+    border-left-color: #47a1d8;
+}
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}

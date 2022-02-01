@@ -169,12 +169,68 @@ textarea, textarea:focus{
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    
+    .latest-sec{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .latest-sec .big-latest{
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .latest-sec .big-latest .latest-new{
+        height: 200px;
+    }
+
+    .latest-sec .big-latest .new-info .new-title{
+        font-size: 1.1rem;
+        margin-bottom: .7rem;
+    }
+
+    .latest-sec .more-latest{
+        flex-basis: 100%;
+        width: 100%;
+        padding-top: 0;
+        padding: 10px;
+    }
+
+    .latest-sec .more-latest .latest-new{
+        flex-basis: 100%;
+        margin: 0;
+        margin-top: 0 !important;
+        margin-bottom: 15px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+    .latest-sec{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    .latest-sec .big-latest{
+        flex-basis: 100%;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .latest-sec .more-latest{
+        flex-basis: 100%;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .latest-sec .more-latest .latest-new{
+        flex-basis: 48%;
+        margin: 0;
+    }
+
+    .latest-sec .more-latest .latest-new:nth-child(2),
+    .latest-sec .more-latest .latest-new:nth-child(4){
+        margin-left: 4%;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */

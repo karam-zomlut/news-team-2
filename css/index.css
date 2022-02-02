@@ -42,7 +42,8 @@ textarea:focus {
   border: none;
 }
 
-button, .btn{
+button,
+.btn {
   cursor: pointer;
 }
 
@@ -329,116 +330,125 @@ nav .nav .nav-icons li a:hover {
   border-left-color: #47a1d8;
 }
 
-
 /* -----------------------------------------------------------------
   Style Page Main
 --------------------------------------------------------------------*/
-.page-main{
+.page-main {
   margin: 2rem 0;
 }
 
-.page-main .k-container{
+.page-main .k-container {
   display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
 }
-
+@media (max-width: 991px) {
+  .page-main .k-container {
+    flex-direction: column;
+  }
+}
 /* -----------------------------------------------------------------
   Style Categories Section
 --------------------------------------------------------------------*/
-.categories-sec{
-  flex-basis: 74%;
+.categories-sec {
+  flex-basis: 70%;
 }
-
-.categories-sec .new-sec .sec-title{
+@media (max-width: 991px) {
+  .categories-sec {
+    flex-basis: 70%;
+  }
+}
+.categories-sec .new-sec .sec-title {
   font-size: 1.5rem;
   font-weight: 800;
   color: #4a4a4a;
   letter-spacing: 1px;
   border-left: 5px solid #e91802;
-  line-height: .8;
+  line-height: 0.8;
   padding-left: 0.5rem;
   margin: 0 10px 2rem;
   text-transform: uppercase;
 }
 
-.categories-sec .sec-boxes{
+.categories-sec .sec-boxes {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.categories-sec .sec-boxes .single-new{
+.categories-sec .sec-boxes .single-new {
   flex-basis: 30%;
   margin: 0 10px;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   margin-bottom: 1.3rem;
   overflow: hidden;
 }
 
-.categories-sec .sec-boxes .single-new:hover .new-image img{
+.categories-sec .sec-boxes .single-new:hover .new-image img {
   transform: scale(1.2) rotate(3deg);
 }
 
-.categories-sec .sec-boxes .single-new .new-image{
+.categories-sec .sec-boxes .single-new .new-image {
   overflow: hidden;
 }
 
-.categories-sec .sec-boxes .single-new .new-image img{
+.categories-sec .sec-boxes .single-new .new-image img {
   width: 100%;
   height: 150px;
   object-fit: cover;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
-.categories-sec .sec-boxes .single-new .new-info{
-  padding: .3rem .5rem ;
+.categories-sec .sec-boxes .single-new .new-info {
+  padding: 0.3rem 0.5rem;
 }
 
-.categories-sec .sec-boxes .single-new .new-info .new-title{
+.categories-sec .sec-boxes .single-new .new-info .new-title {
   font-size: 1rem;
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
 }
 
-.categories-sec .sec-boxes .single-new .new-info .new-title .new-link{
+.categories-sec .sec-boxes .single-new .new-info .new-title .new-link {
   color: rgb(46, 46, 46);
-  transform: all .4s;
+  transform: all 0.4s;
 }
 
-.categories-sec .sec-boxes .single-new .new-info .new-title .new-link:hover{
+.categories-sec .sec-boxes .single-new .new-info .new-title .new-link:hover {
   color: #000;
 }
 
-.categories-sec .sec-boxes .single-new .new-info .new-desc{
-  font-size: .9rem;
+.categories-sec .sec-boxes .single-new .new-info .new-desc {
+  font-size: 0.9rem;
   color: #4a4a4a;
   margin-bottom: 1rem;
 }
 
-.categories-sec .sec-boxes .single-new .new-info .new-date{
-  font-size: .8rem;
+.categories-sec .sec-boxes .single-new .new-info .new-date {
+  font-size: 0.8rem;
   font-weight: bold;
   color: #888;
 }
 
-.categories-sec .sec-btns{
+.categories-sec .sec-btns {
   text-align: center;
   padding: 1.8rem 1rem;
 }
 
-.categories-sec .sec-btns .btn{
-  padding: .7rem 1.5rem;
+.categories-sec .sec-btns .btn {
+  padding: 0.7rem 1.5rem;
   border: 1px solid #ec4744;
   color: #ec4744;
   font-weight: 600;
   background-color: transparent;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
-.categories-sec .sec-btns .btn:hover{
+.categories-sec .sec-btns .btn:hover {
   background-color: #ec4744;
-  color: #FFF;
-  padding: .7rem 2.3rem;
+  color: #fff;
+  padding: 0.7rem 2.3rem;
 }
 
 /* -----------------------------------------------------------------
@@ -480,24 +490,19 @@ nav .nav .nav-icons li a:hover {
     margin-bottom: 15px;
   }
 
-  .page-main .k-container{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .categories-sec{
+  .categories-sec {
     flex-basis: 100%;
   }
 
-  .categories-sec .sec-boxes{
+  .categories-sec .sec-boxes {
     flex-direction: column;
   }
 
-  .categories-sec .sec-boxes .single-new:nth-child(3){
+  .categories-sec .sec-boxes .single-new:nth-child(3) {
     display: none;
   }
 
-  .categories-sec .sec-boxes .single-new{
+  .categories-sec .sec-boxes .single-new {
     flex-basis: 100%;
   }
 }
@@ -531,22 +536,22 @@ nav .nav .nav-icons li a:hover {
     margin-left: 4%;
   }
 
-  .categories-sec .sec-boxes .single-new:nth-child(3){
+  .categories-sec .sec-boxes .single-new:nth-child(3) {
     display: none;
   }
 
-  .categories-sec .sec-boxes .single-new{
+  .categories-sec .sec-boxes .single-new {
     flex-basis: 48%;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .categories-sec .sec-boxes .single-new:nth-child(3){
+  .categories-sec .sec-boxes .single-new:nth-child(3) {
     display: none;
   }
 
-  .categories-sec .sec-boxes .single-new{
+  .categories-sec .sec-boxes .single-new {
     flex-basis: 48%;
   }
 }
@@ -557,6 +562,153 @@ nav .nav .nav-icons li a:hover {
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+}
+
+/* -----------------------------------------------------------------
+    Aside Style
+--------------------------------------------------------------------*/
+.block-title {
+  text-transform: uppercase;
+  position: relative;
+  font-size: 18px;
+  padding: 15px;
+}
+.block-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+  height: 10px;
+  width: 54px;
+  background-color: red;
+}
+aside {
+  flex: 30%;
+}
+@media (max-width: 991px) {
+  aside {
+    flex: 100%;
+  }
+}
+aside .clock {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+aside .wether {
+  margin-bottom: 20px;
+}
+aside .aside-tab .news-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+aside .aside-tab .news-type > li {
+  border: 1px solid #ccc;
+  flex: 1;
+  text-align: center;
+  padding: 14px 0;
+  color: #666;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+aside .aside-tab .news-type > li.active {
+  background-color: red;
+  color: white;
+}
+aside .aside-tab .tab-content {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+aside .aside-tab .tab-content .tab-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+aside .aside-tab .tab-content .tab-list > li {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+aside .aside-tab .tab-content .tab-list > li img {
+  max-width: 100%;
+}
+aside .aside-tab .tab-content .tab-list > li .tab-info {
+  padding: 0 5px;
+}
+aside .aside-tab .tab-content .tab-list > li .tab-info p {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+aside .aside-tab .tab-content .tab-list > li .tab-info p:hover {
+  text-decoration: underline;
+}
+aside .aside-tab .tab-content .tab-list > li .tab-info span {
+  font-size: 10px;
+  color: #888;
+}
+aside .aside-category {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+aside .aside-category .category-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+aside .aside-category .category-list > li {
+  border-top: 1px solid #ccc;
+  padding: 18px 15px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.5s ease-in-out;
+}
+aside .aside-category .category-list > li:hover {
+  background-color: red;
+}
+aside .aside-category .category-list > li a {
+  color: #888;
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+aside .aside-category .category-list > li:hover > a {
+  color: white;
+}
+aside .aside-form {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+aside .aside-form .form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+aside .aside-form [type="email"] {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+aside .aside-form [type="submit"] {
+  padding: 15px;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+aside .aside-form [type="submit"]:hover {
+  background-color: #ff322c;
+}
+.calendar {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
 /* -----------------------------------------------------------------

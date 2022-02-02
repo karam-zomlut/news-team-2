@@ -147,15 +147,15 @@ nav .nav .nav-links li {
   }
 }
 
-nav .nav .nav-links li:first-child,
+nav .nav .nav-links li:first-child > a,
 nav .nav .nav-links li:last-child {
   position: relative;
 }
-nav .nav .nav-links li:first-child::before {
+nav .nav .nav-links li:first-child > a::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -10px;
   transform: translateY(-50%);
   width: 8px;
   height: 8px;

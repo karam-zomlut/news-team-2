@@ -41,6 +41,14 @@ textarea:focus {
   outline: none;
   border: none;
 }
+
+.k-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .container-box {
   padding-left: 15px;
   padding-right: 15px;
@@ -186,13 +194,6 @@ nav .nav .nav-icons li a {
 nav .nav .nav-icons li a:hover {
   color: #888;
 }
-
-/* .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-} */
 
 /* -----------------------------------------------------------------
     Style Latset Section

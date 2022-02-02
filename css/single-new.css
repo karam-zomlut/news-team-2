@@ -1,24 +1,19 @@
 /*-----------------------------------------------------------------------------------
-
     [Table of contents]
 
     01. [Base (Global style for some elements)]
     02. [Style Navbar]
-    03. [Single Page Container]
-    04. [Side Bar Style]
-    05. [Style Section Name]
-    06. [Style Section Name]
+    03. [header style]
+    04. [Single Page Container]
+    05. [Side Bar Style]
+    06. [Style related blog sectio]
     07. [Style Section Name]
-
-    
-
-
+ 
 -----------------------------------------------------------------------------------*/
 
 /* -----------------------------------------------------------------
     Global style for some elements
 --------------------------------------------------------------------*/
-
 * {
   padding: 0;
   margin: 0;
@@ -61,7 +56,124 @@ img {
 /* -----------------------------------------------------------------
     Style Navbar
 --------------------------------------------------------------------*/
+nav .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  position: relative;
+  padding: 0 10px;
+}
 
+nav .nav .nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  nav .nav .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 3px #eee;
+    z-index: 1;
+  }
+  nav .nav .nav-links.show {
+    opacity: 0;
+  }
+}
+nav .nav .nav-links li {
+  padding: 0 16px;
+}
+
+@media (max-width: 991px) {
+  nav .nav .nav-links li {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .nav .nav-links li {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    text-align: center;
+    padding: 13px;
+    background-color: white;
+  }
+  nav .nav .nav-links li:hover {
+    background-color: #f1f1f1;
+  }
+}
+
+nav .nav .nav-links li:first-child,
+nav .nav .nav-links li:last-child {
+  position: relative;
+}
+nav .nav .nav-links li:first-child::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+}
+nav .nav .nav-links li:last-child::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f101";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  nav .nav .nav-links li:last-child::after {
+    display: none;
+  }
+}
+
+nav .nav .nav-links li a {
+  color: #444;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+
+nav .nav .nav-links li a:hover {
+  color: red;
+}
+
+nav .nav .nav-icons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav .nav-icons li {
+  padding-left: 15px;
+}
+
+nav .nav .nav-icons li a {
+  color: #444;
+  transition: all 0.5s ease-in-out;
+}
+
+nav .nav .nav-icons li a:hover {
+  color: #888;
+}
+/* -----------------------------------------------------------------
+header style     --------------------------------------------------------------------*/
 header {
   background-color: #0e1e32;
   width: 100%;
@@ -70,17 +182,17 @@ header {
   justify-content: center;
   align-items: center;
   height: 40vh;
-  padding-bottom: 30px;
+  margin-top: 10px;
+  padding-bottom: 50px;
 }
 
 /* image container style */
-
 .header-image img {
   width: 70%;
   height: 50vh;
   margin: auto 15%;
   position: absolute;
-  top: 25vh;
+  top: 35vh;
 }
 
 /* -----------------------------------------------------------------
@@ -136,6 +248,7 @@ header {
 .body-single-page-container .sub-body-news-container {
   width: 90%;
 }
+
 .body-single-page-container .sub-body-news-container .paragraph {
   margin-bottom: 30px;
   text-align: justify;
@@ -149,6 +262,7 @@ header {
   border-bottom: 1px solid #c31815;
   margin: 40px 0;
 }
+
 .body-single-page-container .sub-title-news-container .title-news {
   font-style: normal;
   font-weight: bold;
@@ -162,6 +276,7 @@ header {
   width: 90%;
   padding: 10px 0;
 }
+
 .body-single-page-container .content-image-news-container .content-image {
   width: 80%;
   margin: 0 auto 30px auto;
@@ -171,12 +286,14 @@ header {
   transition: all 0.5s ease-in-out;
   border-radius: 5px;
 }
+
 .body-single-page-container
   .content-image-news-container
   .content-image
   img:hover {
   transform: scale(0.97);
 }
+
 .body-single-page-container
   .content-image-news-container
   .content-image
@@ -185,6 +302,7 @@ header {
   position: relative;
   text-align: justify;
 }
+
 .body-single-page-container
   .content-image-news-container
   .content-image
@@ -231,9 +349,11 @@ header {
   opacity: 1;
   transition: all 0.5s ease-in-out;
 }
+
 .number {
   opacity: 0.7;
 }
+
 .comment-header-container {
   padding: 15px 0;
   margin-bottom: 15px;
@@ -354,6 +474,7 @@ header {
   background-color: #ffffff;
   position: relative;
 }
+
 /* related blog section  */
 .related-blog {
   display: flex;
@@ -362,6 +483,7 @@ header {
   width: 80%;
   margin: 200px 10% 0 10%;
 }
+
 .box {
   width: 150px;
   background-color: #fff;
@@ -371,14 +493,17 @@ header {
   border-radius: 15px;
   margin: 20px;
 }
+
 .box h3 {
   font-size: 16px;
   padding: 5px;
 }
+
 hr {
   width: 80%;
   margin: auto 10%;
 }
+
 .box > img {
   border-radius: 15px;
 }
@@ -391,6 +516,7 @@ hr {
   align-items: center;
   padding: 10px;
 }
+
 .social img {
   width: 2rem;
 }
@@ -402,7 +528,13 @@ hr {
 @media (max-width: 465px) {
   header {
     height: 40vh;
-    padding: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header h2 {
+    font-size: 1.2rem;
   }
   .header-image img {
     width: 100%;
@@ -421,8 +553,23 @@ hr {
     width: 300px;
   }
 }
+
 /* seconed break point  */
-@media (max-width: 375px) {
+@media (max-width: 490px) {
+  .related-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0 0 0;
+  }
+  .box {
+    width: 350px;
+  }
+}
+
+/* third break point  */
+@media (max-width: 375px) and(max-width:249px) {
   header {
     height: 30vh;
     padding: 15px;

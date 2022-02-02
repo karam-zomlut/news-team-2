@@ -412,11 +412,8 @@ hr {
         media Query 
     --------------------------------------------------------------------*/
 
-
-
 /* landscape Tablet devices (1200px and down)*/
 @media (max-width: 1200px) {
- 
     .single-page-container {
         gap: 15px;
     }

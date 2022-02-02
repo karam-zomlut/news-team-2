@@ -505,6 +505,11 @@ header {
   justify-content: space-between;
   border-radius: 15px;
   margin: 20px;
+  transition: all 0.5s;
+}
+.box:hover{
+  transform: scale(1.08);
+  box-shadow: 1px 2px 5px grey;
 }
 
 .box h3 {
@@ -514,6 +519,8 @@ header {
 
 hr {
   width: 80%;
+  height: 1px;
+  background-color: #0000008f;
   margin: auto 10%;
 }
 
@@ -749,6 +756,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
     width: 100%;
   }
   .box {
@@ -887,7 +895,7 @@ div .footer-links {
   color: #1877f2;
 }
 
-/* responsive for the header section */
+/* responsive for the footer section */
 /* first break point  */
 /* media query header*/
 

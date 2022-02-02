@@ -58,7 +58,8 @@ textarea:focus {
 /* Extra small devices  */
 @media (max-width: 575.98px) {
   .container-box {
-    width: 420px;
+    width: 100%;
+    max-width: 400px;
   }
 }
 

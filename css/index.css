@@ -504,6 +504,12 @@ nav .nav .nav-icons li a:hover {
 
   .categories-sec .sec-boxes .single-new {
     flex-basis: 100%;
+    margin: 0 0 1.3rem;
+    width: 100%;
+  }
+
+  .categories-sec .sec-boxes .single-new .new-image img{
+    height: 210px;
   }
 }
 
@@ -558,6 +564,13 @@ nav .nav .nav-icons li a:hover {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .categories-sec .sec-boxes .single-new:nth-child(3) {
+    display: none;
+  }
+
+  .categories-sec .sec-boxes .single-new {
+    flex-basis: 48%;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -600,11 +613,18 @@ aside {
   }
 }
 aside .clock {
-  border: 1px solid #ccc;
   margin-bottom: 20px;
+  box-shadow: 0 0 10px 0 rgb(116 116 116 / 20%);
+  border-radius: 3px;
+  overflow: hidden;
 }
 aside .wether {
   margin-bottom: 20px;
+}
+div.aw-widget-current-inner div.aw-widget-content{
+  box-shadow: 0 0 10px 0 rgb(116 116 116 / 20%);
+  border-radius: 3px;
+  overflow: hidden;
 }
 aside .aside-tab .news-type {
   display: flex;
@@ -628,9 +648,11 @@ aside .aside-tab .news-type > li.active {
   color: white;
 }
 aside .aside-tab .tab-content {
-  border: 1px solid #ccc;
   margin-bottom: 20px;
   padding: 15px;
+  box-shadow: 0 0 10px 0 rgba(168, 168, 168, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
 }
 aside .aside-tab .tab-content .tab-list {
   display: flex;
@@ -640,7 +662,9 @@ aside .aside-tab .tab-content .tab-list {
 aside .aside-tab .tab-content .tab-list > li {
   display: flex;
   align-items: center;
-  border: 1px solid #ccc;
+  box-shadow: 0 0 10px 0 rgba(116, 116, 116, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
 }
 aside .aside-tab .tab-content .tab-list > li img {
   max-width: 100%;
@@ -662,7 +686,9 @@ aside .aside-tab .tab-content .tab-list > li .tab-info span {
   color: #888;
 }
 aside .aside-category {
-  border: 1px solid #ccc;
+  box-shadow: 0 0 10px 0 rgb(116 116 116 / 20%);
+  border-radius: 3px;
+  overflow: hidden;
   margin-bottom: 20px;
 }
 @media (max-width: 991px) {
@@ -694,7 +720,9 @@ aside .aside-category .category-list > li:hover > a {
   color: white;
 }
 aside .aside-form {
-  border: 1px solid #ccc;
+  box-shadow: 0 0 10px 0 rgb(116 116 116 / 20%);
+  border-radius: 3px;
+  overflow: hidden;
   margin-bottom: 20px;
 }
 aside .aside-form .form {
@@ -720,7 +748,9 @@ aside .aside-form [type="submit"]:hover {
   background-color: #ff322c;
 }
 .calendar {
-  border: 1px solid #ccc;
+  box-shadow: 0 0 10px 0 rgb(116 116 116 / 20%);
+  border-radius: 3px;
+  overflow: hidden;
   padding: 15px;
   margin-bottom: 20px;
 }

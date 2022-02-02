@@ -2,12 +2,12 @@
     [Table of contents]
 
     01. [Base (Global style for some elements)]
-    02. [Style Navbar]
+    02. [ Style Navbar]
     03. [header style]
     04. [Single Page Container]
-    05. [Side Bar Style]
-    06. [Style related blog sectio]
-    07. [media query]
+    05. [ Side Bar Style]
+    06. [media Query]
+    07. [Style Footer Section]
  
 -----------------------------------------------------------------------------------*/
 
@@ -198,8 +198,11 @@ nav .nav .nav-icons li a {
 nav .nav .nav-icons li a:hover {
     color: #888;
 }
+
 /* -----------------------------------------------------------------
-header style     --------------------------------------------------------------------*/
+header style     
+--------------------------------------------------------------------*/
+
 header {
     background-color: #0e1e32;
     width: 100%;
@@ -227,7 +230,8 @@ header {
 
 /* -----------------------------------------------------------------
         Single Page Container
-    --------------------------------------------------------------------*/
+--------------------------------------------------------------------*/
+
 .main-body-container {
     width: 70%;
     margin: 40px auto;
@@ -452,7 +456,8 @@ header {
 
 /* -----------------------------------------------------------------
         Side Bar Style
-    --------------------------------------------------------------------*/
+ --------------------------------------------------------------------*/
+
 .sidebar-banner-page-container {
     flex: 25%;
     display: flex;
@@ -573,7 +578,7 @@ hr {
 
 /* -----------------------------------------------------------------
         media Query 
-    --------------------------------------------------------------------*/
+--------------------------------------------------------------------*/
 
 /* landscape Tablet devices (1200px and down)*/
 @media (max-width: 1200px) {
@@ -780,7 +785,7 @@ hr {
     }
 }
 
-/* seconed break point  */
+/* second break point  */
 
 @media (max-width: 665px) {
     .related-blog {
@@ -838,6 +843,7 @@ hr {
         margin: -12vh 0 0 0;
     }
 }
+
 /* -----------------------------------------------------------------
     Style Footer Section
 --------------------------------------------------------------------*/
@@ -846,22 +852,26 @@ hr {
     color: white;
     margin: 30vh 0 -30vh;
 }
+
 .page-footer .footer-box {
     display: flex;
     justify-content: space-evenly;
     margin: 20px;
     padding: 20px 20px;
 }
+
 @media (max-width: 991px) {
     .page-footer .footer-box {
         position: relative;
     }
 }
+
 @media (max-width: 991px) {
     .page-footer .footer-box {
         display: block;
     }
 }
+
 .page-footer .footer-box .logo-copyright {
     text-align: center;
     display: flex;
@@ -870,20 +880,24 @@ hr {
     align-content: center;
     align-items: center;
 }
+
 .page-footer .footer-box .logo-copyright img {
     max-width: 70px;
     min-width: 70px;
 }
+
 @media (max-width: 991px) {
     .page-footer .footer-box .logo-copyright {
         text-align: left;
     }
 }
+
 .page-footer .footer-box .logo-copyright p {
     color: #cccc;
     font-size: 15px;
     margin-top: 30px;
 }
+
 @media (max-width: 991px) {
     .page-footer .footer-box .logo-copyright p {
         position: absolute;
@@ -896,18 +910,22 @@ hr {
         text-align: center;
     }
 }
+
 @media (max-width: 991px) {
     .page-footer .footer-box .policy {
         margin-top: 30px;
     }
 }
+
 .page-footer .footer-box .policy li {
     margin-bottom: 8px;
     transition: all 0.5s ease-in-out;
 }
+
 .page-footer .footer-box .policy li:hover {
     transform: translateX(10px);
 }
+
 .page-footer .footer-box .policy li a {
     color: white;
 }
@@ -916,6 +934,7 @@ hr {
     display: flex;
     flex-direction: column;
 }
+
 .page-footer .footer-box .footer-links .page-sections {
     display: flex;
     justify-content: space-between;
@@ -923,10 +942,12 @@ hr {
     gap: 30px;
     margin-bottom: 30px;
 }
+
 div .footer-links {
     display: flex;
     justify-content: center;
 }
+
 @media (max-width: 991px) {
     .page-footer .footer-box .footer-links .page-sections {
         flex-direction: column;
@@ -937,18 +958,22 @@ div .footer-links {
         transform: translateY(-50%);
     }
 }
+
 .page-footer .footer-box .footer-links .page-sections li a {
     color: white;
     transition: all 0.5s ease-in-out;
 }
+
 .page-footer .footer-box .footer-links .page-sections li a:hover {
     color: #ccc;
 }
+
 .page-footer .footer-box .footer-links .social-icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 @media (max-width: 991px) {
     .page-footer .footer-box .footer-links .social-icons {
         justify-content: center;
@@ -960,18 +985,23 @@ div .footer-links {
 .page-footer .footer-box .footer-links .social-icons li a {
     color: white;
 }
+
 .page-footer .footer-box .footer-links .social-icons li a i {
     transition: all 0.5s ease-in-out;
 }
+
 .page-footer .footer-box .footer-links .social-icons li i.rss:hover {
     color: #f26522;
 }
+
 .page-footer .footer-box .footer-links .social-icons li i.twitter:hover {
     color: #1da1f2;
 }
+
 .page-footer .footer-box .footer-links .social-icons li i.reddit:hover {
     color: #ff4500;
 }
+
 .page-footer .footer-box .footer-links .social-icons li i.facebook:hover {
     color: #1877f2;
 }
@@ -1003,6 +1033,7 @@ div .footer-links {
         font-size: 0.7rem;
     }
 }
+
 @media (max-width: 990px) {
     footer {
         display: flex;

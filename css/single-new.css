@@ -498,7 +498,7 @@ header {
 }
 
 .box {
-  width: 180px;
+  width: 250px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -707,7 +707,7 @@ hr {
 
 /* seconed break point  */
 
-@media (max-width: 590px) {
+@media (max-width: 665px) {
   .related-blog {
     display: flex;
     justify-content: center;
@@ -753,5 +753,186 @@ hr {
   }
   .box {
     width: 250px;
+  }
+  main .body-single-page-container {
+    margin: -12vh 0 0 0;
+  }
+}
+/* -----------------------------------------------------------------
+    Style Footer Section
+--------------------------------------------------------------------*/
+.page-footer {
+  background-color: #0e1e32;
+  color: white;
+  margin: 30vh 0 -30vh;
+}
+.page-footer .footer-box {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+  padding: 20px 20px;
+}
+@media (max-width: 991px) {
+  .page-footer .footer-box {
+    position: relative;
+  }
+}
+@media (max-width: 991px) {
+  .page-footer .footer-box {
+    display: block;
+  }
+}
+.page-footer .footer-box .logo-copyright {
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .page-footer .footer-box .logo-copyright {
+    text-align: left;
+  }
+}
+.page-footer .footer-box .logo-copyright p {
+  color: #cccc;
+  font-size: 15px;
+  margin-top: 30px;
+}
+@media (max-width: 991px) {
+  .page-footer .footer-box .logo-copyright p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .page-footer .footer-box .policy {
+    margin-top: 30px;
+  }
+}
+.page-footer .footer-box .policy li {
+  margin-bottom: 8px;
+  transition: all 0.5s ease-in-out;
+}
+.page-footer .footer-box .policy li:hover {
+  transform: translateX(10px);
+}
+.page-footer .footer-box .policy li a {
+  color: white;
+}
+
+.page-footer .footer-box .footer-links {
+  display: flex;
+  flex-direction: column;
+}
+.page-footer .footer-box .footer-links .page-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+div .footer-links {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .page-footer .footer-box .footer-links .page-sections {
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.page-footer .footer-box .footer-links .page-sections li a {
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.page-footer .footer-box .footer-links .page-sections li a:hover {
+  color: #ccc;
+}
+.page-footer .footer-box .footer-links .social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .page-footer .footer-box .footer-links .social-icons {
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+.page-footer .footer-box .footer-links .social-icons li a {
+  color: white;
+}
+.page-footer .footer-box .footer-links .social-icons li a i {
+  transition: all 0.5s ease-in-out;
+}
+.page-footer .footer-box .footer-links .social-icons li i.rss:hover {
+  color: #f26522;
+}
+.page-footer .footer-box .footer-links .social-icons li i.twitter:hover {
+  color: #1da1f2;
+}
+.page-footer .footer-box .footer-links .social-icons li i.reddit:hover {
+  color: #ff4500;
+}
+.page-footer .footer-box .footer-links .social-icons li i.facebook:hover {
+  color: #1877f2;
+}
+
+/* responsive for the header section */
+/* first break point  */
+/* media query header*/
+
+/* first break point  */
+@media (max-width: 465px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  footer.page-footer {
+    margin: 30vh 0 0 0;
+  }
+  .page-footer .footer-box .logo-copyright img {
+    width: 150px;
+    margin: 0 10px 0 50px;
+  }
+  ul.page-sections {
+    margin: 15px -50px 0 0;
+    font-size: 0.7rem;
+  }
+  ul.policy {
+    margin: 30px 0 0 -30px;
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 990px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  footer.page-footer {
+    margin: 25vh 0 0 0;
+  }
+  .page-footer .footer-box .logo-copyright img {
+    width: 200px;
+    margin: 0 10px;
+  }
+  ul.page-sections {
+    margin: 30px -50px 0 0;
+    font-size: 0.7rem;
+  }
+  ul.policy {
+    margin: 30px 0 0 -40px;
+    font-size: 0.7rem;
   }
 }

@@ -379,6 +379,7 @@ header {
     color: #c31815;
     opacity: 1;
     transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .number {
@@ -417,6 +418,12 @@ header {
     height: 70px;
     max-height: 70px;
     max-width: 70px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.comment-body-container .comment-avatar img:hover {
+    transform: scale(1.2) rotate(3deg);
 }
 
 .comment-body-container .comment-details {
@@ -490,13 +497,13 @@ header {
     overflow: hidden;
 }
 
+.sidebar-banner-page-container .banner-container .banner-body:hover img {
+    transform: scale(1.2) rotate(3deg);
+}
+
 .sidebar-banner-page-container .banner-container .banner-body img {
     border-radius: 5px 5px 0 0;
     transition: all 0.5s ease-in-out;
-}
-
-.sidebar-banner-page-container .banner-container .banner-body img:hover {
-    transform: rotate(10deg) scale(1.5);
 }
 
 .sidebar-banner-page-container
@@ -538,22 +545,19 @@ header {
     border-radius: 15px;
     margin: 20px;
     transition: all 0.5s;
+    overflow: hidden;
 }
-.box:hover {
-    transform: scale(1.08);
-    box-shadow: 1px 2px 5px grey;
+.box-card-container {
+    background-color: #fff;
+    position: relative;
 }
 
+.box:hover > img {
+    transform: scale(1.2) rotate(3deg);
+}
 .box h3 {
     font-size: 16px;
     padding: 15px 20px;
-}
-
-hr {
-    width: 90%;
-    height: 1px;
-    background-color: #0000008f;
-    margin: auto 10%;
 }
 
 .box > img {
@@ -561,6 +565,14 @@ hr {
     height: 120px;
     max-height: 120px;
     min-height: 120px;
+    transition: all 0.5s;
+}
+
+.box-card-container hr {
+    width: 90%;
+    height: 1px;
+    background-color: #0000008f;
+    margin: auto;
 }
 
 .social {
@@ -570,6 +582,7 @@ hr {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    cursor: pointer;
 }
 
 .social img {
@@ -739,12 +752,6 @@ hr {
     }
 }
 
-/* Extra Small devices (280 px and down)*/
-@media (max-width: 350px) {
-    bod {
-        max-width: 350px;
-    }
-}
 /* responsive for the header section */
 /* first break point  */
 /* media query header*/
@@ -1054,5 +1061,12 @@ div .footer-links {
     ul.policy {
         margin: 30px 0 0 -40px;
         font-size: 0.7rem;
+    }
+}
+
+/* Extra Small devices (400 px and down)*/
+@media (max-width: 400px) {
+    bod {
+        min-width: 400px !important;
     }
 }

@@ -32,6 +32,10 @@ go live server
 ## ✧Technology
 - HTML ➙ to build the structure of the pages 
 - CSS ➙ to style the app
+- JS ➙ to toggle [show / hide ] the menu button on mobile screen
+
+
+
 
 ## ✧Team members
 1. [Jehad Abo Shaqra](https://github.com/Jehad91)

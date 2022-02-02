@@ -582,6 +582,15 @@ nav .nav .nav-icons li a:hover {
   width: 54px;
   background-color: red;
 }
+@media (max-width: 991px) {
+  .block-title {
+    text-align: center;
+  }
+  .block-title::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 aside {
   flex: 30%;
 }
@@ -655,6 +664,11 @@ aside .aside-tab .tab-content .tab-list > li .tab-info span {
 aside .aside-category {
   border: 1px solid #ccc;
   margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  aside .aside-category {
+    text-align: center;
+  }
 }
 aside .aside-category .category-list {
   display: flex;

@@ -268,7 +268,7 @@ header {
     max-height: 550px;
     margin: auto 15%;
     position: absolute;
-    top: 240px;
+    top: 265px;
 }
 
 /* -----------------------------------------------------------------
@@ -1104,60 +1104,9 @@ div .footer-links {
     color: #1877f2;
 }
 
-/* responsive for the footer section */
-/* first break point  */
-/* media query header*/
-
-/* first break point  */
-@media (max-width: 465px) {
-    footer {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    footer.page-footer {
-        margin: 30vh 0 0 0;
-    }
-    .page-footer .footer-box .logo-copyright img {
-        width: 150px;
-        margin: 0 10px 0 50px;
-    }
-    ul.page-sections {
-        margin: 15px -50px 0 0;
-        font-size: 0.7rem;
-    }
-    ul.policy {
-        margin: 30px 0 0 -30px;
-        font-size: 0.7rem;
-    }
-}
-
-@media (max-width: 990px) {
-    footer {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    footer.page-footer {
-        margin: 25vh 0 0 0;
-    }
-    .page-footer .footer-box .logo-copyright img {
-        width: 200px;
-        margin: 0 10px;
-    }
-    ul.page-sections {
-        margin: 30px -50px 0 0;
-        font-size: 0.7rem;
-    }
-    ul.policy {
-        margin: 30px 0 0 -40px;
-        font-size: 0.7rem;
-    }
-}
-
 /* Extra Small devices (400 px and down)*/
-@media (max-width: 400px) {
-    bod {
-        min-width: 400px !important;
+@media (max-width: 490px) {
+    .page-footer {
+        margin: 10vh 0 -30vh;
     }
 }
